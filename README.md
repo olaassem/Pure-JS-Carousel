@@ -1,7 +1,7 @@
 # Pure-JS-Carousel Comprehensive Build Steps
 
 
-### Markup
+## Markup
   - carousel wrapper
   - slides wrapper  [data-module=carousel]
   - slide (content)
@@ -23,7 +23,7 @@
   - stop the animations during slide change
   - don't auto-advance while the animation is playing
 
-##JS
+## JS
   (if the markup isn't just the minimum, skip to 3)
   1. add carousel wrapper
   2. add any necessary attributes to the slides wrapper and the slides
