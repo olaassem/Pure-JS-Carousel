@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Carousel</title>
-  <link rel="stylesheet" type="text/css" href="carousel.css" />
-</head>
-<body>
+  <head>
+    <title>Carousel</title>
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
+  </head>
+  <body>
+    <section
+      class="carousel"
+      aria-label="content-slider"
+      data-module="Carousel"
+    >
+      <button
+        class="carousel__btn carousel__btn--left hidden"
+        aria-label="previous"
+      >
+        &#128072;
+      </button>
 
+      <div class="carousel__track-container">
+        <ul class="carousel__track" aria-live="polite">
+          <li class="carousel__slide current-slide">
+            <img
+              src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-8.jpg"
+              alt="Slide 1"
+            />
+          </li>
 
-  <section class="carousel" data-module="Carousel">
+          <li class="carousel__slide" aria-hidden="true">
+            <img
+              src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-17.jpg"
+              alt="Slide 2"
+            />
+          </li>
 
-    <button class="carousel__btn carousel__btn--left hidden">
-    &#128072;
-    </button>
+          <li class="carousel__slide" aria-hidden="true">
+            <img
+              src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-3.jpg"
+              alt="Slide 3"
+            />
+          </li>
 
-    <div class="carousel__track-container">
-      <ul class="carousel__track">
+          <li class="carousel__slide" aria-hidden="true">
+            <img
+              src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-18.jpg"
+              alt="Slide 4"
+            />
+          </li>
 
-        <li class="carousel__slide current-slide">
-          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-8.jpg" alt="">
-        </li>
+          <li class="carousel__slide" aria-hidden="true">
+            <img
+              src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-7.jpg"
+              alt="Slide 5"
+            />
+          </li>
+        </ul>
+      </div>
 
-        <li class="carousel__slide">
-          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-17.jpg" alt="">
-        </li>
+      <button class="carousel__btn carousel__btn--right" aria-label="next">
+        &#128073;
+      </button>
 
-        <li class="carousel__slide">
-          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-3.jpg" alt="">
-        </li>
+      <!-- Indicators are populated via JS -->
+      <div class="carousel__nav"></div>
 
-        <li class="carousel__slide">
-          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-18.jpg" alt="">
-        </li>
-
-        <li class="carousel__slide">
-          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/02/surreal-photography-platon-yurich-7.jpg" alt="">
-        </li>
-      </ul>
-    </div>
-
-    <button class="carousel__btn carousel__btn--right">
-      &#128073;
-    </button>
-
-    <div class="carousel__nav">
-      <!-- <button class="carousel__indicator current-slide"></button>
-      <button class="carousel__indicator"></button>
-      <button class="carousel__indicator"></button> -->
-    </div>
-
-    <script type="text/javascript" src="js/carousel.js"></script>
-
-  </section>
-</body>
+      <!--
+        <script type="text/javascript" src="js/carousel-orig.js"></script>
+      -->
+      <script type="module" src="js/index.js"></script>
+    </section>
+  </body>
 </html>
